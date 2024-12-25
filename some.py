@@ -20,16 +20,15 @@
 # for i in range(0,6):
 #     print("*"*i*2)
 
+list1 = input("Enter the first list of elements separated by spaces: ").split()
+list2 = input("Enter the second list of elements separated by spaces: ").split()
+common_elements = list(set(list1) & set(list2))
 
+print("Common elements:", common_elements)
 
+# def pattern(n):
+#     length =2*n-1
+#     for i in range(length):
+#         print(" ".join(str(n-min(i,j,length-1-i,length-1-j)) for j in range(length)))
 
-
-
-
-
-def pattern(n):
-    length =2*n-1
-    for i in range(length):
-        print(" ".join(str(n-min(i,j,length-1-i,length-1-j)) for j in range(length)))
-
-pattern(int(input("enter number : ")))
+# pattern(int(input("enter number : ")))
