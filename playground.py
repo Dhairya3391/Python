@@ -55,14 +55,28 @@
 #     return bar
 # print(foo(10))
 
-def createDict():
-    dict1 = {}
-    n = int(input("Enter the number of elements: "))
-    for i in range(n):
-        key = input("Enter the key: ")
-        value = input("Enter the value: ")
-        dict1[key] = value
-    return dict1
+# def createDict():
+#     dict1 = {}
+#     n = int(input("Enter the number of elements: "))
+#     for i in range(n):
+#         key = input("Enter the key: ")
+#         value = input("Enter the value: ")
+#         dict1[key] = value
+#     return dict1
 
-d = createDict()
-print(d)
+# d = createDict()
+# print(d)
+
+# def pattern(n):
+#     count = 1
+#     for i in range(1,n+1):
+#         for j in range(i):
+#             if i%2!=0:
+#                 print(count,end=" ")
+#                 count+=1
+#             else:
+#                 print(chr(96+count),end=" ")
+#                 count+=1
+#         print()
+
+# pattern(int(input("enter number : ")))
