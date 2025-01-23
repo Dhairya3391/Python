@@ -80,3 +80,29 @@
 #         print()
 
 # pattern(int(input("enter number : ")))
+
+
+l1 = [1,2,3,4,3,2,1]
+def foo(l):
+    maxV = max(l)
+    flag = True;
+    for i in range(0,maxV-1):
+        if l[i]<l[i+1]:
+            continue
+        else:
+            print("first",i)
+            flag = False
+            break
+
+    t = l.index(maxV)
+
+    for i in range(t,len(l)-1):
+        if l[i]>l[i+1]:
+            continue
+        else:
+            print(i)
+            flag = False
+            break
+    return flag
+
+print(foo(l1))
